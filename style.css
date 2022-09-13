@@ -11,25 +11,29 @@ img {
   flex-direction: row;        
 }
 .content {
-  background: rgb(12, 75, 31);
-  background: linear-gradient(0deg,rgba(10, 50, 20, 0.9) 0%,rgba(45, 200, 170, 0.9) 100%);
-  border-radius: 50px;     
-  /*max-width: 50em;
-  max-height: 50em;*/
-  width: 1200px;
-  height: 1200px;
-  font-size: 200%;    
-  margin-top: 15%;
-  margin-left: 20%;  
+  background: rgba(19, 5, 145, 0.5);      
+  width: 1100px;
+  height: 1000px;
+  color: white;  
+  font-size: 300%;    
+  margin-top: 10%;
+  margin-left: 10%;  
+  
 }
-.links {
+.content h1 {
+  margin: 0%;       
+}
+.content h5 {
+  margin: 0%;       
+}
+.menu {
   background: rgba(85, 85, 85, 0.7);  
   width: 320px;
   height: 380px;
   margin: 2%;    
   border-radius: 50px;        
 }
-.links > div {     
+.menu > div {     
   text-align: center; 
   color: Silver;
   font-size: 200%;    
@@ -38,10 +42,22 @@ img {
   position: relative;
   top: 13%;
 }
-.links > div:hover{
-  background-color: rgb(8, 100, 0);
-  color: black;
+.menu > div:hover{
+  background-color: rgba(5, 70, 0);
+  color: white;
 }
-h4{
- margin:4%;
+.menu h4{
+  margin:4%;
 }
+.links {   
+  width: 380px;
+  height: 140px;  
+  vertical-align: top;
+  border-bottom: 5px solid silver; 
+  display: flex; 
+  flex-direction: row;        
+}
+.links > div{
+  margin: auto;
+}
+
