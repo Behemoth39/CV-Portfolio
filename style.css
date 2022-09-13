@@ -42,3 +42,11 @@ img
     text-align: center;
     border-radius: 50px;                    
 }
+h4
+{
+    margin: 2%;    
+}
+a
+{
+    text-decoration: none;
+}
