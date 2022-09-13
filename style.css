@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/mountain.jpg");
+  background-image: url("./images/Backgr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -10,16 +10,15 @@ img {
   background: rgb(12, 75, 31);
   background: linear-gradient(
     0deg,
-    rgba(10, 75, 30, 0.9) 0%,
-    rgba(45, 195, 210, 0.9) 100%
-  );
+    rgba(10, 50, 20, 0.9) 0%,
+    rgba(45, 200, 170, 0.9) 100%);
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   margin: auto;
   margin-top: 5%;
-  max-width: 70em;
+  max-width: 50em;
   font-size: 150%;
 }
 .about {
@@ -31,11 +30,9 @@ img {
   text-align: center;
   border-radius: 50px;
 }
-.info {
-  background: rgba(85, 85, 85, 0.5);
-  background-size: contain;
+.info {  
   margin-top: 2%;
-  width: 880px;
+  width: 800px;
   height: 660px;
   text-align: center;
   border-radius: 50px;
