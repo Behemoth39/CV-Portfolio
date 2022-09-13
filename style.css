@@ -6,40 +6,42 @@ body {
 img {
   border-radius: 50%;
 }
+.contain{
+  display: flex; 
+  flex-direction: row;        
+}
 .content {
   background: rgb(12, 75, 31);
-  background: linear-gradient(
-    0deg,
-    rgba(10, 50, 20, 0.9) 0%,
-    rgba(45, 200, 170, 0.9) 100%);
-  border-radius: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: auto;
-  margin-top: 5%;
-  max-width: 50em;
-  font-size: 150%;
+  background: linear-gradient(0deg,rgba(10, 50, 20, 0.9) 0%,rgba(45, 200, 170, 0.9) 100%);
+  border-radius: 50px;     
+  /*max-width: 50em;
+  max-height: 50em;*/
+  width: 1200px;
+  height: 1200px;
+  font-size: 200%;    
+  margin-top: 15%;
+  margin-left: 20%;  
 }
-.about {
-  background: rgba(85, 85, 85, 0.5);
-  background-size: contain;
+.links {
+  background: rgba(85, 85, 85, 0.7);  
   width: 320px;
-  height: 660px;
-  margin: 2%;
-  text-align: center;
-  border-radius: 50px;
+  height: 380px;
+  margin: 2%;    
+  border-radius: 50px;        
 }
-.info {  
-  margin-top: 2%;
-  width: 800px;
-  height: 660px;
-  text-align: center;
-  border-radius: 50px;
+.links > div {     
+  text-align: center; 
+  color: Silver;
+  font-size: 200%;    
+  border-top: 2px solid silver;
+  border-bottom: 2px solid silver;    
+  position: relative;
+  top: 13%;
 }
-h4 {
-  margin: 2%;
-}
-a {
+.links > div:hover{
+  background-color: rgb(8, 100, 0);
   color: black;
+}
+h4{
+ margin:4%;
 }
