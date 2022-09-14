@@ -32,13 +32,14 @@ body {
 .content p {
   margin: 2%;
 }
-.con {
-  margin: 2%;
-  color: aqua;
-}
 .mail {
   color: aqua;
   font-size: 75%;
+  transform: scaleX(0.90) scaleY(0.90);
+}
+.mail a:hover {
+  transition-duration: 0.2s;
+  transform: scaleX(0.90) scaleY(0.90);
 }
 .menu {
   background: rgba(85, 85, 85, 0.7);
@@ -63,6 +64,10 @@ body {
 .menu h4 {
   margin: 4%;
 }
+.menu h4:hover {
+  transition-duration: 0.3s;
+  transform: scaleX(1.1) scaleY(1.1);
+}
 .menu a {
   text-decoration: none;
   color: white;
@@ -77,15 +82,18 @@ body {
   vertical-align: top;
   border-bottom: 5px solid silver;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
 }
 .links > div {
   margin: auto;
 }
-.links > div:hover {
-  background-color: rgba(0, 255, 255, 0.8);
-  border-radius: 80px;
-  transition-duration: 0.5s;
+.links > div img{  
+  border-radius: 60px;
+}    
+.links > div img:hover {
+  background-color: rgba(0, 255, 255, 0.8);      
+  transition-duration: 0.4s;
+  transform: scaleX(0.85) scaleY(0.85)
 }
 .btn {
   border: 2px solid aqua;
@@ -96,11 +104,12 @@ body {
   cursor: pointer;
   display: inline-block;
   transition-duration: 0.5s;
-  border-radius: 20px;
+  border-radius: 20px;  
 }
 .btn:hover {
   background-color: aqua;
   color: black;
+  transform: scaleX(0.90) scaleY(0.90);  
 }
 .port {
   display: flex;
@@ -122,3 +131,8 @@ li {
 p a {
   color: aqua;
 }
+p a:hover {
+  filter: brightness(50%);    
+  transition-duration: 0.3s;
+}
+
