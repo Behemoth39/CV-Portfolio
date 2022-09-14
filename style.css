@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-color: black;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) { /* Har lite svårt att få detta å fungera */
   body {
     background-image: url("./images/Backgr.jpg");
     background-size: fill;
@@ -63,7 +63,7 @@ body {
 }
 .menu { /* lägg till att menyn blir dropdown ifall fönstret blir för litet */
   background: rgba(85, 85, 85, 0.7);
-  width: 280px;
+  width: 260px;
   min-width: 250px;
   height: 380px;
   margin: 2%;
@@ -75,7 +75,7 @@ body {
   border-top: 2px solid silver;
   border-bottom: 2px solid silver;
   position: relative;
-  top: 8%;  
+  top: 9%;  
 }
 /*.menu > div:hover { Behöver jag verkligen bakgrundsfärg?
   background-color: aqua;  
@@ -95,7 +95,7 @@ body {
   text-decoration-line: underline;
   color: aqua;
 }
-.links { /* lägg till att bilderna blir överst ifall fönstret blir för litet */
+.links { /* lägg till att bilderna jämte dropdown menyn ifall fönstret blir för litet */
   width: 380px;
   height: 140px;
   vertical-align: top;
