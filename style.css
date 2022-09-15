@@ -1,10 +1,12 @@
-body {
-  background-image: url("./images/Backgr.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
+@media only screen and (min-width: 900px) {
+  body {
+    background-image: url("./images/Backgr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
 }
-@media only screen and (max-width: 800px) { /* Har lite svårt att få detta å fungera */
+@media only screen and (max-width: 900px) {
   body {
     background-image: url("./images/Backgr.jpg");
     background-size: fill;
@@ -23,7 +25,7 @@ body {
   margin-left: 6%;
   margin-right: 2%;
   font-family: Calibri;
-  min-width: 300px;  
+  min-width: 300px;
 }
 .content h1 {
   margin: 0%;
@@ -46,73 +48,115 @@ body {
   margin-bottom: 2%;
 }
 .content img {
-  float: right;  
-  border-radius: 40%;  
+  float: right;
+  border-radius: 40%;
 }
-.content > div img {  
-  border-radius: 0%;  
+.content > div img {
+  border-radius: 0%;
 }
 .mail {
   color: aqua;
   font-size: 75%;
-  transform: scaleX(0.90) scaleY(0.90);
+  transform: scaleX(0.9) scaleY(0.9);
 }
 .mail a:hover {
   transition-duration: 0.2s;
-  transform: scaleX(0.90) scaleY(0.90);
+  transform: scaleX(0.9) scaleY(0.9);
 }
-.menu { /* lägg till att menyn blir dropdown ifall fönstret blir för litet */
-  background: rgba(85, 85, 85, 0.7);
-  width: 260px;
-  min-width: 250px;
-  height: 380px;
-  margin: 2%;
-  border-radius: 40px;
+@media only screen and (min-width: 900px) {  
+  .menu {
+    background: rgba(85, 85, 85, 0.7);
+    width: 260px;
+    min-width: 250px;
+    height: 380px;
+    margin: 2%;
+    border-radius: 40px;
+  }
+  .menu > div {
+    text-align: center;
+    font-size: 200%;
+    border-top: 2px solid silver;
+    border-bottom: 2px solid silver;
+    position: relative;
+    top: 9%;
+  }
+  .menu > div:hover {
+    background-color: grey;
+  }
+  .menu h4 {
+    margin: 4%;
+  }
+  .menu h4:hover {
+    transition-duration: 0.3s;
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu a:hover {
+    text-decoration-line: underline;
+    color: aqua;
+  }
+  .links {    
+    width: 380px;
+    height: 140px;
+    vertical-align: top;
+    border-bottom: 5px solid silver;
+    display: flex;
+    flex-direction: row;
+  }
+  .links > div {
+    margin: auto;
+  }
+  .links > div img {
+    border-radius: 60px;
+  }
+  .links > div img:hover {
+    background-color: aqua;
+    transition-duration: 0.4s;
+    transform: scaleX(0.85) scaleY(0.85);
+  }
 }
-.menu > div {
-  text-align: center;
-  font-size: 200%;
-  border-top: 2px solid silver;
-  border-bottom: 2px solid silver;
-  position: relative;
-  top: 9%;  
-}
-/*.menu > div:hover { Behöver jag verkligen bakgrundsfärg?
-  background-color: aqua;  
-}*/
-.menu h4 {
-  margin: 4%;
-}
-.menu h4:hover {
-  transition-duration: 0.3s;
-  transform: scaleX(1.1) scaleY(1.1);  
-}
-.menu a {
-  text-decoration: none;
-  color: white;
-}
-.menu a:hover {
-  text-decoration-line: underline;
-  color: aqua;
-}
-.links { /* lägg till att bilderna jämte dropdown menyn ifall fönstret blir för litet */
-  width: 380px;
-  height: 140px;
-  vertical-align: top;
-  border-bottom: 5px solid silver;
-  display: flex;
-  flex-direction: row;  
-}
-.links > div {
-  margin: auto;
-}
-.links > div img{  
-  border-radius: 60px;
-}    
-.links > div img:hover {
-  background-color: aqua;      
-  transition-duration: 0.4s;
-  transform: scaleX(0.85) scaleY(0.85)
+@media only screen and (max-width: 900px) { 
+  /* Flytta menyn till toppen och gör om till dropdown */
+  .menu {    
+    height: fit-content;
+    width: fit-content;     
+    background: rgba(85, 85, 85, 0.7);
+  }
+  .menu > div {
+    text-align: center;    
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;      
+  }
+  .menu > div:hover {
+    background-color: grey;
+  }
+  .menu h4 {
+    margin: 2%;
+  }  
+  .menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .menu a:hover {    
+    color: aqua;
+  }
+  .links {    
+    height: fit-content;
+    width: fit-content;                  
+  }  
+  .links > div {
+    margin: -20%;
+  }
+  .links > div img {
+    border-radius: 60px;
+    transform: scaleX(0.4) scaleY(0.4);        
+  }
+  .links > div img:hover {
+    background-color: aqua;    
+  }
 }
 .btn {
   border: 2px solid aqua;
@@ -123,17 +167,17 @@ body {
   cursor: pointer;
   display: inline-block;
   transition-duration: 0.5s;
-  border-radius: 20px;  
+  border-radius: 20px;
 }
 .btn:hover {
   background-color: aqua;
   color: black;
-  transform: scaleX(0.90) scaleY(0.90);  
+  transform: scaleX(0.9) scaleY(0.9);
 }
 .port {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
 }
 .port img:hover {
   border-radius: 50%;
@@ -148,6 +192,6 @@ p a {
   color: aqua;
 }
 p a:hover {
-  filter: brightness(50%);    
+  filter: brightness(50%);
   transition-duration: 0.3s;
 }
