@@ -101,8 +101,7 @@
   .links {
     position: absolute;
     right: 5%;    
-    vertical-align: top;
-    border-bottom: 5px solid silver;
+    vertical-align: top;    
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
