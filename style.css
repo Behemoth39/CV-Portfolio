@@ -3,7 +3,7 @@
     background-image: url("./images/Backgr.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: black;    
   }
 }
 @media only screen and (max-width: 900px) {
@@ -145,8 +145,12 @@
   flex-direction: row;
   flex-wrap: wrap;  
 }
-.port img:hover {
+.port a img {
   border-radius: 50%;
+}
+.port img:hover {
+  transform: scaleX(0.9) scaleY(0.9);
+  transition: 0.3s;
 }
 .port p{
   margin: 2%;
