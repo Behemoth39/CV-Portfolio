@@ -63,7 +63,7 @@
   transition-duration: 0.2s;
   transform: scaleX(0.9) scaleY(0.9);
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1200px) {
   .menu {
     background: rgba(85, 85, 85, 0.7);
     width: 260px;
@@ -119,7 +119,7 @@
     transform: scaleX(0.85) scaleY(0.85);
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .menu {
     display: none;
   }
@@ -164,24 +164,44 @@ p a:hover {
   filter: brightness(50%);
   transition-duration: 0.3s;
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1200px) {
   .link-tree {
-    display: none;    
+    display: none;
   }
   .link-tree > div {
-    display: none; 
+    display: none;
   }
   nav {
     display: none;
-  }    
+  }
+  .dmenu {
+    display: none;
+  }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
+  .dmenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+    float: right;
+    position: relative;
+    width: fit-content;
+  }
+  .dmenu div {    
+    margin-top: 1em;
+  }
+  .dmenu div img {
+    border-radius: 60px;
+    margin-left: 0.8em;         
+  }
+  .dmenu > div img:hover {    
+    background-color: aqua;        
+  }
   .link-tree {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;  
-    margin-bottom: -10%; 
-    position: fixed
+    flex-direction: column;
+    position: fixed;
   }
   .link-tree > div {
     font-size: 200%;
@@ -191,16 +211,16 @@ p a:hover {
     line-height: 75px;
     font-size: 30px;
     color: white;
-    background-color: rgba(65, 65, 65, 0.95); 
+    background-color: rgba(65, 65, 65, 0.85);
   }
-  .link-tree > div:hover {    
-    color: aqua;                  
+  .link-tree > div:hover {
+    color: aqua;
   }
   nav input {
-    display: none;    
+    display: none;
   }
   nav {
-    overflow: hidden;    
+    overflow: hidden;
   }
   nav ul {
     overflow: hidden;
@@ -213,14 +233,15 @@ p a:hover {
   nav li a {
     all: unset;
     cursor: default;
-    color: white;    
+    color: white;
   }
-  nav li a:hover {    
+  nav li a:hover {
     color: aqua;
-    text-decoration-line: underline;    
+    text-decoration-line: underline;
   }
   nav input:checked ~ ul {
     width: 100%;
-    height: 100%;         
-  }  
+    height: 100%;
+    opacity: 100%;
+  }
 }
