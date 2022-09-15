@@ -15,14 +15,14 @@
 }
 .contain {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;   
 }
 .content {
   width: 1000px;
   color: white;
-  font-size: 280%;
-  margin-top: 12%;
-  margin-left: 6%;
+  font-size: 280%;  
+  margin-top: 3em;
+  margin-left: 4%;
   margin-right: 2%;
   font-family: Calibri;
   min-width: 300px;
@@ -44,7 +44,7 @@
   font-size: 60%;
 }
 .content p {
-  margin-top: 2%;
+  margin-top: 2;
   margin-bottom: 2%;
 }
 .content img {
@@ -179,22 +179,20 @@ p a:hover {
   }
 }
 @media only screen and (max-width: 1200px) {
-  .dmenu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;    
+  .imglink {
+    display: flex;      
     float: right;
-    position: relative;
+    position: right;
     width: fit-content;
   }
-  .dmenu div {    
+  .imglink div {    
     margin-top: 1em;
   }
-  .dmenu div img {
+  .imglink div img {
     border-radius: 60px;
     margin-left: 0.8em;         
   }
-  .dmenu > div img:hover {    
+  .imglink > div img:hover {    
     background-color: aqua;        
   }
   .link-tree {
@@ -215,6 +213,7 @@ p a:hover {
   }
   .link-tree > div:hover {
     color: aqua;
+    background-color: rgba(65, 65, 65, 0.95);
   }
   nav input {
     display: none;
