@@ -120,7 +120,7 @@
   }
 }
 @media only screen and (max-width: 900px) { 
-  /* Flytta menyn till toppen och gör om till dropdown */
+  /* Lägg till i en expanderande meny som overlay */
   .menu {    
     display: none;
   }  
