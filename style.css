@@ -67,7 +67,7 @@
   .menu {
     background: rgba(85, 85, 85, 0.7);
     width: 260px;
-    min-width: 250px;
+    min-width: 200px;
     height: 380px;
     margin: 2%;
     border-radius: 40px;
@@ -100,6 +100,7 @@
   }
   .links {    
     width: 380px;
+    min-width: 140px;
     height: 140px;
     vertical-align: top;
     border-bottom: 5px solid silver;
@@ -121,49 +122,18 @@
 @media only screen and (max-width: 900px) { 
   /* Flytta menyn till toppen och gör om till dropdown */
   .menu {    
-    height: fit-content;
-    width: fit-content;     
-    background: rgba(85, 85, 85, 0.7);
-  }
-  .menu > div {
-    text-align: center;    
-    border-top: 1px solid silver;
-    border-bottom: 1px solid silver;      
-  }
-  .menu > div:hover {
-    background-color: grey;
-  }
-  .menu h4 {
-    margin: 2%;
+    display: none;
   }  
-  .menu a {
-    text-decoration: none;
-    color: white;
-  }
-  .menu a:hover {    
-    color: aqua;
-  }
   .links {    
-    height: fit-content;
-    width: fit-content;                  
-  }  
-  .links > div {
-    margin: -20%;
-  }
-  .links > div img {
-    border-radius: 60px;
-    transform: scaleX(0.4) scaleY(0.4);        
-  }
-  .links > div img:hover {
-    background-color: aqua;    
-  }
+    display: none;                 
+  }    
 }
 .btn {
   border: 2px solid aqua;
   color: aqua;
   background-color: rgba(0, 30, 0, 0.7);
-  padding: 15px 45px;
-  font-size: 75%;
+  padding: 15px 45px;  
+  font-size: 75%;  
   cursor: pointer;
   display: inline-block;
   transition-duration: 0.5s;
