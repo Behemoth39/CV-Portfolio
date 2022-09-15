@@ -21,7 +21,7 @@
   width: 1000px;
   color: white;
   font-size: 280%;  
-  margin-top: 3em;
+  margin-top: 15%;
   margin-left: 4%;
   margin-right: 2%;
   font-family: Calibri;
@@ -67,7 +67,7 @@
   .menu {
     background: rgba(85, 85, 85, 0.7);
     width: 260px;
-    min-width: 200px;
+    min-width: 260px;
     height: 380px;
     margin: 2%;
     border-radius: 40px;
@@ -99,19 +99,17 @@
     color: aqua;
   }
   .links {
-    width: 380px;
-    min-width: 140px;
-    height: 140px;
+    position: absolute;
+    right: 5%;    
     vertical-align: top;
     border-bottom: 5px solid silver;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-  }
-  .links > div {
-    margin: auto;
-  }
+  } 
   .links > div img {
     border-radius: 60px;
+    margin: 1em;
   }
   .links > div img:hover {
     background-color: aqua;
@@ -146,10 +144,25 @@
 .port {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 .port img:hover {
   border-radius: 50%;
+}
+.port p{
+  margin: 2%;
+  color: silver;
+}
+.port a{
+  text-decoration: none;
+}
+.text-img {  
+  color: black; 
+  text-align: center;
+  width: 250px;  
+}
+.text-img:hover p {    
+  color: aqua; 
 }
 ul h3 {
   color: aqua;
@@ -174,15 +187,14 @@ p a:hover {
   nav {
     display: none;
   }
-  .dmenu {
+  .imglink {
     display: none;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .imglink {
-    display: flex;      
-    float: right;
-    position: right;
+  .imglink {       
+    position: absolute;
+    right: 5%;
     width: fit-content;
   }
   .imglink div {    
