@@ -1,9 +1,13 @@
+html {
+  height: 100%;
+  width: 100%;
+}
 @media only screen and (min-width: 900px) {
   body {
     background-image: url("./images/Backgr.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;    
+    background-color: black;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -15,12 +19,12 @@
 }
 .contain {
   display: flex;
-  flex-direction: row;   
+  flex-direction: row;
 }
 .content {
   width: 1000px;
   color: white;
-  font-size: 280%;  
+  font-size: 280%;
   margin-top: 15%;
   margin-left: 4%;
   margin-right: 2%;
@@ -43,7 +47,7 @@
   margin: 0%;
   font-size: 60%;
 }
-.content p {  
+.content p {
   margin-bottom: 2%;
 }
 .content img {
@@ -99,12 +103,12 @@
   }
   .links {
     position: absolute;
-    right: 5%;    
-    vertical-align: top;    
+    right: 5%;
+    vertical-align: top;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-  } 
+  }
   .links > div img {
     border-radius: 60px;
     margin: 1em;
@@ -142,7 +146,7 @@
 .port {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 .port a img {
   border-radius: 50%;
@@ -151,17 +155,17 @@
   transform: scaleX(0.9) scaleY(0.9);
   transition: 0.3s;
 }
-.port p{
+.port p {
   margin: 2%;
   color: silver;
 }
-.port a{
+.port a {
   text-decoration: none;
 }
-.text-img {  
-  color: black; 
+.text-img {
+  color: black;
   text-align: center;
-  width: 250px;  
+  width: 250px;
 }
 ul h3 {
   color: aqua;
@@ -191,20 +195,20 @@ p a:hover {
   }
 }
 @media only screen and (max-width: 1200px) {
-  .imglink {       
+  .imglink {
     position: absolute;
     right: 5%;
     width: fit-content;
   }
-  .imglink div {    
+  .imglink div {
     margin-top: 1em;
   }
   .imglink div img {
     border-radius: 60px;
-    margin-left: 0.8em;         
+    margin-left: 0.8em;
   }
-  .imglink > div img:hover {    
-    background-color: aqua;        
+  .imglink > div img:hover {
+    background-color: aqua;
   }
   .link-tree {
     display: flex;
